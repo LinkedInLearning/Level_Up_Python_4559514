@@ -5,9 +5,9 @@ import os
 
 dir_files ={}
 
-for orig_obj in glob.glob(r"..\data\*.pdf"):
+for orig_obj in glob.glob(r"data/*.pdf"):
     print(os.path.splitext(os.path.basename(orig_obj))[0][-6:-2])  #後ろから6文字目から4文字
-    dest_dir = r"..\data\\" + os.path.splitext(os.path.basename(orig_obj))[0][-6:-2]
+    dest_dir = r"data/" + os.path.splitext(os.path.basename(orig_obj))[0][-6:-2]
     dir_files.setdefault(dest_dir,[])
     dir_files[dest_dir].append(orig_obj)
 
