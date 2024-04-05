@@ -25,7 +25,7 @@ for pt in lst_c:    #Shallow copy
     print(f"lst_c内のPointクラスのオブジェクトのIDは{id(pt)}")
 
 
-lst_d    = copy.deepcopy(lst_a)    
+lst_d = copy.deepcopy(lst_a)    
 print(f"lst_aのオブジェクトIDは{id(lst_a)}")
 print(f"lst_dのオブジェクトIDは{id(lst_d)}")
 for pt in lst_a:    #Shallow copy
