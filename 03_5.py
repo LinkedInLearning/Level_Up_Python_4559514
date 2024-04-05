@@ -19,7 +19,6 @@ with open("ordersList.csv", "r", encoding="shift_jis") as f:
 
 pprint(orders_data)
 
-#DictWriterメソッドを使わないことを説明する
 with open("ordersAggregate.csv", "w", encoding="shift_jis", newline="") as f:
     writer = csv.writer(f)
     line = ["得意先","受注数量","受注金額","商品名","受注数量","受注金額", ]
